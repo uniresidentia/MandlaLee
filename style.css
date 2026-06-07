@@ -1,0 +1,359 @@
+/* RESET — NO MAGIC, NO ROUNDED CARDS, NO SHADOWS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: #ffffff;
+  color: #111111;
+  line-height: 1.45;
+  font-weight: 400;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* STRICT GRID SYSTEM — NO FLOATING ELEMENTS */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* TYPOGRAPHY — SCALE, HIERARCHY, CLARITY */
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+  border-top: 2px solid #111;
+  padding-top: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* LINKS, ACCENT COLOR ONLY */
+a {
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+  transition: border-color 0.2s;
+}
+
+a:hover {
+  border-bottom-color: #111;
+}
+
+/* ACCENT COLOR (subtle, one only) */
+.accent {
+  color: #c34e2c;
+  border-bottom-color: #c34e2c;
+}
+
+/* NAVIGATION — minimal */
+.site-nav {
+  padding: 2rem 0 1rem 0;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 3rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: none;
+  letter-spacing: -0.01em;
+}
+
+.nav-links a:hover {
+  border-bottom: 1px solid #111;
+}
+
+/* HERO SECTION — no card, no image inside card, pure grid */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 5rem;
+  align-items: start;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #2c2c2c;
+  margin: 1.5rem 0 1.2rem 0;
+  max-width: 90%;
+  line-height: 1.5;
+}
+
+.hero-email {
+  font-family: monospace;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.hero-image-large {
+  width: 100%;
+}
+
+.hero-image-large img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ABOUT — personal, no corporate tone */
+.about-section {
+  margin: 4rem 0 5rem 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.about-text p {
+  margin-bottom: 1.2rem;
+  line-height: 1.55;
+  color: #2a2a2a;
+  font-size: 1rem;
+}
+
+.about-highlight {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #5a5a5a;
+  margin-top: 1rem;
+}
+
+/* WORK SECTION — editorial case studies, no cards */
+.work-section {
+  margin: 5rem 0;
+}
+
+.project-item {
+  margin-bottom: 6rem;
+}
+
+.project-image {
+  margin-bottom: 1.5rem;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #f5f5f5;
+}
+
+.project-meta {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #5a5a5a;
+}
+
+.project-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.project-description {
+  max-width: 70%;
+  margin-bottom: 1rem;
+  color: #2c2c2c;
+}
+
+.project-link {
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: inline-block;
+  border-bottom: 1px solid #aaa;
+}
+
+/* SERVICES — clean list, no icons, no cards */
+.services-section {
+  margin: 5rem 0;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.service-item {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.25rem 0;
+  border-top: 1px solid #eaeaea;
+  padding-top: 0.75rem;
+}
+
+/* CONTACT — no box, no card, minimal */
+.contact-section {
+  margin: 5rem 0 6rem;
+}
+
+.contact-intro {
+  max-width: 65%;
+  margin-bottom: 2.5rem;
+}
+
+.contact-intro p {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.contact-form {
+  max-width: 580px;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.7rem 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Inter', monospace;
+  font-size: 0.95rem;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-bottom-color: #111;
+}
+
+button {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+button:hover {
+  background: #2a2a2a;
+}
+
+/* FOOTER — sparse */
+.site-footer {
+  border-top: 1px solid #eaeaea;
+  padding: 2.5rem 0;
+  font-size: 0.8rem;
+  color: #5a5a5a;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-grid, .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .services-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .project-description {
+    max-width: 100%;
+  }
+  .contact-intro {
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+  .hero-grid {
+    gap: 1.5rem;
+  }
+}
+
+/* No rounded corners, no shadows, no glass — strict brutalist/modernist roots */
+img {
+  border-radius: 0;
+}
+
+/* editorial grid rhythm */
+hr {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid #eaeaea;
+}
+
+.work-section h2, .services-section h2, .contact-section h2 {
+  margin-bottom: 2rem;
+}
